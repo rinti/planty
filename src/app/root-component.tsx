@@ -1,5 +1,6 @@
 import "../i18n"
 import * as React from "react"
+import { Font } from "expo"
 import { setupRootStore } from "./setup-root-store"
 import { StatefulNavigator } from "../navigation"
 import { RootStore } from "./root-store"
@@ -21,6 +22,9 @@ export class RootComponent extends React.Component<{}, RootComponentState> {
    * re-renders when we're good to go.
    */
   async componentDidMount() {
+    await Font.loadAsync({
+      'Montserrat': require('../../assets/fonts/Montserrat-Regular.ttf'),
+    })
     this.setState({
       rootStore: await setupRootStore(),
     })

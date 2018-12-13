@@ -4,7 +4,6 @@
 
 import { AppRegistry } from "react-native"
 import { RootComponent } from "./root-component"
-import { StorybookUIRoot } from "../../storybook"
 
 /**
  * This needs to match what's found in your app_delegate.m and MainActivity.java.
@@ -21,13 +20,6 @@ declare global {
   var module
 }
 
-if (SHOW_STORYBOOK && __DEV__) {
-  // 🎗 REMINDER: Storybook has a server you need to run from a terminal window.
-  //
-  // $> yarn run storybook
-  //
-  AppRegistry.registerComponent(APP_NAME, () => StorybookUIRoot)
-} else {
-  // load our app
-  AppRegistry.registerComponent(APP_NAME, () => RootComponent)
-}
+AppRegistry.registerComponent(APP_NAME, () => RootComponent)
+
+export default RootComponent

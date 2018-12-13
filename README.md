@@ -1,4 +1,4 @@
-#  planty
+# planty
 
 [![CircleCI](https://circleci.com/gh/infinitered/ignite-bowser.svg?style=svg)](https://circleci.com/gh/infinitered/ignite-bowser)
 
@@ -70,7 +70,6 @@ For example: A custom `Button` component would have the main component file, and
 
 This is a departure from the previous boilerplate, which grouped files by type (components together, styles together, tests together, images together, etc.). One feature of this new approach is the use of index files which export specific functions from files in the directory to create a public interface for each "thing", or "feature. You'll see that pattern quite a bit in this boilerplate.
 
-
 ## ./src directory
 
 Included in an Ignite boilerplate project is the src directory. This is a directory you would normally have to create when using vanilla React Native.
@@ -91,6 +90,7 @@ src
 
 **app**
 This is where a lot of your app's initialization takes place. Here you'll find:
+
 * root-component.tsx - This is the root component of your app that will render your navigators and other views.
 
 **i18n**
@@ -126,6 +126,7 @@ This directory will hold your Jest configs and mocks, as well as your [storyshot
 The `ignite` directory stores all things Ignite, including CLI and boilerplate items. Here you will find generators, plugins and examples to help you get started with React Native.
 
 ## Running Storybook
+
 From the command line in your generated app's root directory, enter `yarn run storybook`
 This starts up the storybook server.
 

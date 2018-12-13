@@ -8,4 +8,8 @@
 //
 // It's easier just to leave it here.
 
-import "./src/app/main"
+// import './App/Config/ReactotronConfig'
+// import Expo from "expo"
+import Main from "./src/app/main"
+
+export default Main

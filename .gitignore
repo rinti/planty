@@ -50,3 +50,6 @@ ios/Pods
 
 # Bundle artifact
 *.jsbundle
+
+# Expo
+.expo
